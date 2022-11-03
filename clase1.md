@@ -5,7 +5,8 @@ jueves 03 noviembre 2022, en línea
 hoy aprenderemos:
 
 - contexto artes mediales y Arduino
-- funciones básicas de Arduino: setup() y loop()
+- plataforma Arduino
+- convenciones de programación
 
 ## programa y organización
 
@@ -39,8 +40,17 @@ organizaciones:
 - Processing Foundation https://processingfoundation.org/
 - p5.js https://p5js.org/
 - School of Machines, Making and Make-Believe https://www.schoolofma.org/
+- Sinestesia https://www.sinestesia.cc/
 - Departamento de Diseño, Facultad de Arquitectura y Urbanismo, Universidad de Chile https://www.fau.uchile.cl/diseno
 - Colectivo Posternura https://posternurarecords.cl/
+
+investigación:
+
+- fuente abierta y éticas digitales
+- educación en artes mediales
+- construcción de herramientas para artes mediales
+- diseño de instrumentos reprogramables con microcontroladores
+- redes peer-to-peer y decentralizadas para artes
 
 ## contexto Arduino
 
@@ -68,6 +78,8 @@ organizaciones:
 - https://corazonderobota.wordpress.com/
 - http://22bits.org/
 - https://www.claudiagonzalez.cl/
+- https://www.adafruit.com/circuitpython
+- https://en.wikipedia.org/wiki/Limor_Fried
 
 ## sistemas numéricos (15 min)
 
