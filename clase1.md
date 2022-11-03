@@ -40,6 +40,34 @@ organizaciones:
 - p5.js https://p5js.org/
 - School of Machines, Making and Make-Believe https://www.schoolofma.org/
 - Departamento de Diseño, Facultad de Arquitectura y Urbanismo, Universidad de Chile https://www.fau.uchile.cl/diseno
+- Colectivo Posternura https://posternurarecords.cl/
+
+## contexto Arduino
+
+- https://en.wikipedia.org/wiki/Muriel_Cooper
+- https://act.mit.edu/special-collections/vlw-archive/
+- https://en.wikipedia.org/wiki/John_Maeda
+- https://acg.media.mit.edu/
+- https://plw.media.mit.edu/
+- https://en.wikipedia.org/wiki/Processing
+- https://reas.com/
+- https://wiring.org.co/
+- https://arduinohistory.github.io/
+- https://en.wikipedia.org/wiki/Interaction_Design_Institute_Ivrea
+- https://tigoe.com/
+- https://itp.nyu.edu/physcomp/
+- https://www.amazon.com/Physical-Computing-Sensing-Controlling-Computers/
+
+## más lenguajes y personas
+
+- https://p5js.org/
+- https://lauren-mccarthy.com/
+- https://openframeworks.cc/
+- https://puredata.info/
+- https://tidalcycles.org/
+- https://corazonderobota.wordpress.com/
+- http://22bits.org/
+- https://www.claudiagonzalez.cl/
 
 ## sistemas numéricos (15 min)
 
@@ -78,7 +106,7 @@ lo descomponemos como 1*$10^{2}$ + 2*$10^{1}$ + 3*$10^{0}$ + 4*$10^{-1}$ + 5*$10
 | 22      | 10110  | 16      |
 | 23      | 10111  | 17      |
 
-## convenciones en programación (15 min)
+## convenciones en programación
 
 - en programación, contamos desde 0, por ejemplo si hay 3 elementos, son 0, 1, 2.
 
