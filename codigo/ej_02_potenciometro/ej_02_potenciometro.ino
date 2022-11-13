@@ -1,4 +1,4 @@
-// ej_03_potenciometro
+// ej_02_potenciometro
 // por montoyamoraga
 // para Academia Sinestesia
 // Fondart Iquique Medios Interactivos 2022

@@ -2,13 +2,9 @@
 
 sábado 12 noviembre 2022, presencial
 
-hoy aprenderemos:
+## condiciones iniciales y de refresco con setup() y loop()
 
-- condiciones iniciales setup() y loop()
-
-## condiciones iniciales y de refresco con setup() y loop() (15 min)
-
-las funciones más centrales que usaremos en Arduino son setup() y loop()
+las funciones más fundamentales que usaremos en Arduino son setup() y loop().
 
 setup() corre una vez y al principio, y la usaremos para definir las condiciones iniciales del bosquejo, como la configuración de las patitas de la placa Arduino.
 
@@ -28,7 +24,7 @@ donde tipo nos indica el tipo de dato que la función emite tras finalizar, pued
 
 en nuestros códigos de este curso siempre declararemos las funciones setup() y loop(), que son llamadas y corridas por Arduino de forma automática.
 
-## condicionales if / else (15 min)
+## condicionales if / else
 
 podemos hacer que nuestro código tenga bifurcaciones para distintos comportamientos, al usar condicionales, que en código tienen esta sintaxis.
 
@@ -48,14 +44,14 @@ siempre necesitamos un "if" con una condición que si es cierta, hace que el có
 
 si queremos tener un código que solamente corra si todas las condiciones son falsas, al final escribimos un "else".
 
-## variables y scope (15 min)
+## variables y scope
 
 podemos declarar las variables en 2 lugares distintos:
 
 - variables globales: existen fuera de todo lobque de código, y todo el resto del código tiene acceso a estas variables.
 - variables locales: solamente existen dentro del bloque de código que las contiene, por ejemplo, dentro de la función setup().
 
-## iteración con bucles for (15 min)
+## iteración con bucles for
 
 ya vimos un bucle en Arduino, que es la función loop(), que Arduino se encargar de correrla periódicamente para refrescar el valor de los sensores leídos.
 
@@ -69,9 +65,9 @@ for (int i = 0; i < 4; i++) {
 
 ## descargar Arduino IDE y conectar placa
 
-Trabajaremos con el software Arduino IDE, disponible para descarga en: https://www.arduino.cc/
+trabajaremos con el software Arduino IDE v2.0.1 en noviembre 2022, disponible para descarga en: https://www.arduino.cc/
 
-Para el correcto uso de la placa Arduino con el chip CH340G, es necesario además descargar e instalar los drivers disponibles en:
+para este taller en particular, estamos usando una variante de la placa Arduino Uno que tiene un chip llamado CH340G, que hace necesario además descargar e instalar los drivers disponibles en:
 
 http://www.wch-ic.com/downloads/CH341SER_ZIP.html (Windows) o http://www.wch-ic.com/downloads/CH341SER_MAC_ZIP.html (Mac).
 
@@ -79,16 +75,20 @@ http://www.wch-ic.com/downloads/CH341SER_ZIP.html (Windows) o http://www.wch-ic.
 
 datos digitales de entrada y salida en Arduino: valores de 1 o 0, dígito binario o bit (2 posibles valores)
 
-datos analógicos de entrada en Arduino: se digitalizan al entrar a Arduino, y tienen un rango de 0 a 1023 (10 bits por 2^10).
+datos analógicos de entrada en Arduino: se digitalizan al entrar a Arduino, y tienen un rango de 0 a 1023 (son 10 bits, entonces hay 2^10 valores = 1024 valores).
+
+datos analógicos (PWM) de salida en Arduino: Arduino crea en la sección digital una onda PWM que podemos usar como salida analógica, con rango entre 0 y 255 (son 8 bits, entonces hay 2^8 valores = 256 valores).
 
 ## comunicación serial
 
-información transmitida en dos direcciones usando el puerto USB, un dato tras otro.
+información transmitida en dos direcciones usando el puerto USB.
 
 ```arduino
-Serial.begin (9600); // iniciar comunicacion serial
+ // iniciar comunicacion serial
+Serial.begin (9600);
 
-Serial.println(datoSensor); // ver datos en monitor
+// ver datos en monitor
+Serial.println(datoSensor);
 ```
 
 ## mapeo de valores
