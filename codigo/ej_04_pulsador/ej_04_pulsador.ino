@@ -1,4 +1,4 @@
-// ej_03_pulsador
+// ej_04_pulsador
 // por montoyamoraga
 // para Academia Sinestesia
 // Fondart Iquique Medios Interactivos 2022

@@ -1,4 +1,4 @@
-// ej_04_rgb
+// ej_05_rgb
 // por montoyamoraga
 // para Academia Sinestesia
 // Fondart Iquique Medios Interactivos 2022
