@@ -6,17 +6,18 @@
 // hecho con Arduino 2.0.1
 
 // variable para patita conectada a LED
-int patitaLED = 13;
+int patitaLED = 3;
 
-// variables para tiempo, en milisegundos
-int tiempoEncendido = 1000;
-int tiempoApagado = 500;
-
-int valorSensor;
+// variable para definir patita de lectura analogica
 int patitaSensor = A0;
+// variable para almacenar valor del potenciometro
+int valorSensor = 0;
+// variable para almacenar valor del sensor mapeado
+int valorSensorMapeado = 0;
 
 // setup() ocurre una vez al principio
 void setup() {
+  // definir la patita conectada a LED como salida
   pinMode(patitaLED, OUTPUT);
 
   // iniciar comunicacion serial
@@ -32,13 +33,11 @@ void loop() {
   // imprimir valor sensor
   Serial.println(valorSensor);
 
-  // prender LED
-  digitalWrite(patitaLED, 1);
-  // hacer pausa correspondiente
-  delay(tiempoEncendido);
+  // como el valor de entrada analogica es entre 0 y 1023
+  // y el valor de salida analoga que podemos hacer es entre 0 y 255
+  // usamos la funcion map() para ajustar el valor
+  valorSensorMapeado = map(valorSensor, 0, 1023, 0, 255);
 
-  // apagar LED
-  digitalWrite(patitaLED, 0);
-  // hacer pausa correspondiente
-  delay(tiempoApagado);
+  // prender LED con funcion analogWrite
+  analogWrite(patitaLED, valorSensorMapeado);
 }
